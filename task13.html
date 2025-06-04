@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task13</title>
+</head>
+<body>
+    <script>
+        const animal = {
+           name: "Elephant",
+           species: "Mammal",
+           habitat: "Savannah",
+           diet: "Herbivore",
+           weightKg: 6000,
+           lifespanYears: 60
+        };
+
+        const car = {
+          brand: "Toyota",
+          model: "Camry",
+          year: 2022,
+          color: "White",
+          fuelType: "Petrol",
+          horsepower: 203
+        };
+        console.log(animal,"animal object")
+        console.log(car,"car object")
+
+
+
+        const str2 = 'programming';
+        const arrayOfstr = str2.split('');
+        console.log(arrayOfstr, 'array')
+        const duplicates = []
+        console.log(arrayOfstr.indexOf('r')) 
+        console.log(arrayOfstr.lastIndexOf('r'))
+        arrayOfstr.forEach(ele1 => {
+            if(arrayOfstr.indexOf(ele1) !== arrayOfstr.lastIndexOf(ele1)) {
+                duplicates.push(ele1)
+            }
+        });
+
+
+        const str="hello"
+        const reversed=str.split('').reverse().join('');
+        console.log(reversed,"reversed string")
+
+        const arr=[2,8,5,12,4,33]
+        const highest=Math.max(...arr)
+        const lowest=Math.min(...arr)
+        console.log(highest)
+        console.log(lowest)
+
+        const arr1=[2,7,11,15,3,6,9,10]
+        console.log(arr1.sort((a,b) =>a-b))
+
+        const arr2=[2,6,8,1,4,11]
+        console.log(arr2.slice(0,3))
+
+        const arr3=[1,2,3,5,9,6,7,8]
+        arr3.splice(3,1,4,6)
+        console.log(arr3,"splice method")
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

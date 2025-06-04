@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task16</title>
+</head>
+<body>
+    <script>
+
+       const n = prompt("enter the number");
+        for (let i = 0; i <= n; i = i+2) {
+
+         console.log(i)
+        }
+
+
+    const char=prompt("enter a character");
+    const arr=['a','e','i','o','u']
+    if(arr.includes(char))
+    {
+        console.log("it is vowel")
+    }
+    else{
+        console.log("it is constant")
+    }
+    let ecount=0;
+    let ocount=0;
+    for( let i=1; i <= 999;i++)
+    {
+        if(i %2 ==0)
+    {
+        ecount++
+    }
+    else{
+        ocount++
+    }
+    }
+    console.log(`Even count is ${ecount} and odd count is ${ocount}`)
+
+     const str = 'hellollll';
+
+     const arr2 = str.split('')
+
+     const target = 'l';
+
+     let count = 0
+     arr.forEach((element,index) => {
+
+
+        if(element == target) {
+            count++
+        }
+
+
+     })
+
+    console.log(`The character '${target}' appears ${count} times.`);
+
+
+    const arr3 = [1, 9, 8];
+    let sum = 0;
+    for (let i = 0; i < arr3.length; i++) {
+        sum += arr3[i];
+    }
+    const average =sum/arr3.length;
+    console.log(sum,"sum")
+    console.log(average,"average")
+
+
+
+
+
+    </script>
+</body>
+</html>
